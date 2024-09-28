@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.weather_android_app"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures{
+        viewBinding = true;
+    }
 }
 
 dependencies {
@@ -45,4 +48,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.volley);
+    implementation(libs.picasso)
+    implementation(libs.androidx.fragment.ktx)
+    implementation(libs.play.services.location)
 }
