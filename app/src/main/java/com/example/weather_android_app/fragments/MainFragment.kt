@@ -41,7 +41,7 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import kotlin.math.roundToInt
 
-const val API_KEY = "4948afb39f344866bca115323242509"
+const val API_KEY = "YOUR TOKEN"
 
 class MainFragment : Fragment() {
     private lateinit var fLocationClient: FusedLocationProviderClient
