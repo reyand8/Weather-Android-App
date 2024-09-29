@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="card_item_bg">#BE6D6C6C</color>
+    <color name="card_item_bg">#A19A9696</color>
     <color name="progressBar">#2F2F2F</color>
     <color name="card_bg">#00E2DEDE</color>
 </resources>
