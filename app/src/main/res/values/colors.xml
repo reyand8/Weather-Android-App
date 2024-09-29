@@ -5,4 +5,7 @@
     <color name="card_item_bg">#A19A9696</color>
     <color name="progressBar">#2F2F2F</color>
     <color name="card_bg">#00E2DEDE</color>
+
+    <color name="dialog_ok">#2F2F2F</color>
+    <color name="dialog_cancel">#D74343</color>
 </resources>

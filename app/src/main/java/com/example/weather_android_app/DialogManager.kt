@@ -2,7 +2,9 @@ package com.example.weather_android_app
 
 import android.app.AlertDialog
 import android.content.Context
+import android.graphics.Color
 import android.widget.EditText
+import androidx.core.content.ContextCompat
 
 object DialogManager {
     fun locationSettingsDialog(context: Context, listener: Listener){
@@ -34,6 +36,12 @@ object DialogManager {
             dialog.dismiss()
         }
         dialog.show()
+
+        val okBtn = dialog.getButton(AlertDialog.BUTTON_POSITIVE)
+        okBtn?.setTextColor(ContextCompat.getColor(context, R.color.dialog_ok))
+
+        val cancelBtn = dialog.getButton(AlertDialog.BUTTON_NEGATIVE)
+        cancelBtn?.setTextColor(ContextCompat.getColor(context, R.color.dialog_cancel))
     }
 
     interface Listener{
