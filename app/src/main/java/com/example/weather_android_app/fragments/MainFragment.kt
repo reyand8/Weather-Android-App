@@ -201,7 +201,7 @@ class MainFragment : Fragment() {
                 parseWeatherData(result)
             },
             {
-                    error -> Log.d("MyLog", "Error: $error")
+                    error -> Log.d("ErrorLog", "Error: $error")
             }
         )
         queue.add(request)
@@ -262,9 +262,6 @@ class MainFragment : Fragment() {
         }
         if (conditionText == "Fog" || conditionText == "Mist") {
             binding.imageViewBg.setImageResource(R.drawable.bg_fog)
-        }
-        else {
-            imageViewBg.setImageResource(R.drawable.bg_sunny)
         }
     }
 
