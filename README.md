@@ -2,6 +2,8 @@
 
 Kotlin, Android SDK, Volley, LocationManager
 
+**NOTE:** Add your API KEY to the `MainFragment` file.
+
 _________________________
 _________________________
 
